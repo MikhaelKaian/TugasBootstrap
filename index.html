@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Real Madrid News</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet" />
+    <style>
+        * {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .bg-light {
+            background-color: transparent !important;
+        }
+
+        .carousel-item {
+            height: 100vh;
+            min-height: 300px;
+        }
+
+        .carousel-caption {
+            bottom: 220px;
+        }
+
+        .carousel-caption h5 {
+            font-size: 45px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 25px;
+        }
+
+        .carousel-caption p {
+            width: 60%;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.9;
+        }
+
+        .carousel-caption a {
+            text-transform: uppercase;
+            text-decoration: none;
+            background: darkorange;
+            padding: 10px 30px;
+            display: inline-block;
+            color: #000;
+            margin-top: 15px;
+        }
+
+        .navbar-nav a {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .nav-item {
+            padding-right: 50px;
+        }
+
+        .navbar-light .navbar-brand {
+            color: #fff;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .navbar-light .navbar-brand:focus,
+        .navbar-light .navbar-brand:hover {
+            color: #fff;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-light .navbar-nav .nav-link:focus,
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #fff;
+        }
+
+        .w-100 {
+            height: 100vh;
+        }
+
+        .navbar-toggler {
+            padding: 1px 5px;
+            font-size: 18px;
+            line-height: 0.3;
+            background: #fff;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .navbar-nav {
+                text-align: center;
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+            .carousel-caption {
+                bottom: 165px;
+            }
+
+            .carousel-caption h5 {
+                font-size: 17px;
+            }
+
+            .carousel-caption a {
+                padding: 10px 15px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar-custom" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png"
+                    width="30" height="30" alt="Malas Ngoding" />
+                Real Madrid News
+            </a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+        <div class="carousel-indicators">
+            <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators"
+                type="button"></button>
+            <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators"
+                type="button"></button>
+            <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators"
+                type="button"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img alt="..." class="d-block w-100" src="images/img-1.jpg" />
+                <div class="carousel-caption">
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">
+                        Web Design
+                    </h5>
+                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
+                        nulla, tempore. Deserunt excepturi quas vero.
+                    </p>
+                    <p class="animated bounceInRight" style="animation-delay: 3s">
+                        <a href="#">Learn More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img alt="..." class="d-block w-100" src="images/img-2.jpg" />
+                <div class="carousel-caption">
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">
+                        Graphics Design
+                    </h5>
+                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
+                        nulla, tempore. Deserunt excepturi quas vero.
+                    </p>
+                    <p class="animated bounceInRight" style="animation-delay: 3s">
+                        <a href="#">Learn More</a>
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img alt="..." class="d-block w-100" src="images/img-3.jpg" />
+                <div class="carousel-caption">
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">
+                        Photography
+                    </h5>
+                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
+                        nulla, tempore. Deserunt excepturi quas vero.
+                    </p>
+                    <p class="animated bounceInRight" style="animation-delay: 3s">
+                        <a href="#">Learn More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators"
+            type="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators"
+            type="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- INFORMATION -->
+    <section id="info">
+        <div class="container" data-aos="fade-up">
+            <h1 class="text-center" style="padding-bottom: 30px">Information</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Pertama</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up
+                                the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Kedua</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up
+                                the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Ketiga</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up
+                                the bulk of the card's content.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <h1 class="text-center" style="padding-bottom: 30px">About</h1>
+            <div class="row" style="padding-bottom: 50px">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h3>mmk</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                        necessitatibus odio ea distinctio, ut unde illo corporis, expedita
+                        hic exercitationem numquam fugit recusandae suscipit. Inventore
+                        possimus optio libero sunt nisi! Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Doloremque ratione, molestiae at
+                        inventore sequi alias, iste placeat harum maiores quos nobis iure
+                        eaque ea explicabo, similique nulla eos unde debitis.
+                    </p>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <img src="images/img-4.jpg" class="img-rounded" width="100%" />
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 50px">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="images/img-5.jpg" class="img-rounded" width="100%" />
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h3>Subtitle</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                        necessitatibus odio ea distinctio, ut unde illo corporis, expedita
+                        hic exercitationem numquam fugit recusandae suscipit. Inventore
+                        possimus optio libero sunt nisi! Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Doloremque ratione, molestiae at
+                        inventore sequi alias, iste placeat harum maiores quos nobis iure
+                        eaque ea explicabo, similique nulla eos unde debitis.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h3>Subtitle</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                        necessitatibus odio ea distinctio, ut unde illo corporis, expedita
+                        hic exercitationem numquam fugit recusandae suscipit. Inventore
+                        possimus optio libero sunt nisi! Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Doloremque ratione, molestiae at
+                        inventore sequi alias, iste placeat harum maiores quos nobis iure
+                        eaque ea explicabo, similique nulla eos unde debitis.
+                    </p>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <img src="images/img-6.jpg" class="img-rounded" width="100%" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section id="location">
+        <div class="container-fluid">
+            <h1 class="text-center" style="padding-bottom: 30px">Location</h1>
+            <div class="row">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7478.67788649203!2d107.13989186774535!3d-6.807314449388967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6852e697990cef%3A0x2ddbb36bc8af404e!2sUniversitas%20Suryakancana!5e0!3m2!1sid!2sid!4v1664944717215!5m2!1sid!2sid"
+                    width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" style="background-color: #808080; height: 500px">
+        <div class="container">
+            <div class="row" style="padding-top: 50px">
+                <div class="col-md-6 text-white">
+                    <h1>Contact</h1>
+                    <p class="text-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                        necessitatibus odio ea distinctio, ut unde illo corporis, expedita
+                        hic exercitationem numquam fugit recusandae suscipit. Inventore
+                        possimus optio libero sunt nisi! Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Doloremque ratione, molestiae at
+                        inventore sequi alias, iste placeat harum maiores quos nobis iure
+                        eaque ea explicabo, similique nulla eos unde debitis.
+                    </p>
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid" style="padding-top: 15px">
+        <div class="row">
+            <p class="text-center">Copyright@2022</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        let navbar = document.getElementById("navbar-custom");
+
+        window.addEventListener("scroll", function () {
+            let scroll = window.scrollY;
+
+            if (scroll > 50) {
+                navbar.classList.remove("navbar-dark");
+                navbar.classList.add("bg-light");
+            } else {
+                navbar.classList.add("navbar-dark");
+                navbar.classList.remove("bg-light");
+            }
+        });
+    </script>
+</body>
+
+</html>
