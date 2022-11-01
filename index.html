@@ -55,17 +55,18 @@
         }
 
         .navbar-nav a {
-            font-size: 18px;
+            font-size: 14px;
             text-transform: uppercase;
             font-weight: bold;
         }
 
         .nav-item {
-            padding-right: 50px;
+            padding-right: 20px;
         }
 
+
         .navbar-light .navbar-brand {
-            color: #fff;
+            color: rgb(0, 0, 0);
             font-size: 25px;
             text-transform: uppercase;
             font-weight: bold;
@@ -74,16 +75,16 @@
 
         .navbar-light .navbar-brand:focus,
         .navbar-light .navbar-brand:hover {
-            color: #fff;
+            color: rgb(0, 0, 0);
         }
 
         .navbar-light .navbar-nav .nav-link {
-            color: #fff;
+            color: rgb(0, 0, 0);
         }
 
         .navbar-light .navbar-nav .nav-link:focus,
         .navbar-light .navbar-nav .nav-link:hover {
-            color: #fff;
+            color: rgb(0, 0, 0);
         }
 
         .w-100 {
@@ -116,6 +117,67 @@
                 font-size: 15px;
             }
         }
+
+        .nh_especiales_background {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: left top;
+        }
+
+        .nh_especiales_container {
+            padding: 2.75rem 0 5.563rem;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .nh_espaciales_title {
+            text-transform: uppercase;
+            letter-spacing: 0;
+            color: #FFFFFF;
+            font-family: "oswald", sans-serif;
+            font-size: 2.25rem;
+            font-weight: normal;
+            line-height: 2.87rem;
+            margin: 0 0 0.625rem;
+            padding: 0 1.563rem;
+            box-sizing: border-box;
+        }
+
+        .target_espaciales_link {
+            line-height: 1;
+            margin: 0 0 3.125rem;
+            padding: 0 1.563rem;
+            box-sizing: border-box;
+            text-decoration: none;
+            display: block;
+        }
+
+        .full_section {
+            background-image: url("images/fondoEspeciales.jpg");
+        }
+
+        section#info {
+            padding-bottom: 100px 0px;
+        }
+
+        section#about {
+            padding: 100px;
+        }
+
+        img {
+            user-select: none;
+            max-width: 100%;
+            display: block;
+        }
+
+        img,
+        video {
+            height: auto;
+            max-width: 100%;
+        }
     </style>
 </head>
 
@@ -124,8 +186,7 @@
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png"
-                    width="30" height="30" alt="Malas Ngoding" />
-                Real Madrid News
+                    width="30" height="30" alt="..." />Real Madrid
             </a>
             <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
                 class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
@@ -133,229 +194,262 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#info">Bernabéu Stadium</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#location">Location</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
-        <div class="carousel-indicators">
-            <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators"
-                type="button"></button>
-            <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators"
-                type="button"></button>
-            <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators"
-                type="button"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img alt="..." class="d-block w-100" src="images/img-1.jpg" />
-                <div class="carousel-caption">
-                    <h5 class="animated bounceInRight" style="animation-delay: 1s">
-                        Web Design
-                    </h5>
-                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
-                        nulla, tempore. Deserunt excepturi quas vero.
-                    </p>
-                    <p class="animated bounceInRight" style="animation-delay: 3s">
-                        <a href="#">Learn More</a>
-                    </p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img alt="..." class="d-block w-100" src="images/img-2.jpg" />
-                <div class="carousel-caption">
-                    <h5 class="animated bounceInRight" style="animation-delay: 1s">
-                        Graphics Design
-                    </h5>
-                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
-                        nulla, tempore. Deserunt excepturi quas vero.
-                    </p>
-                    <p class="animated bounceInRight" style="animation-delay: 3s">
-                        <a href="#">Learn More</a>
-                    </p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img alt="..." class="d-block w-100" src="images/img-3.jpg" />
-                <div class="carousel-caption">
-                    <h5 class="animated bounceInRight" style="animation-delay: 1s">
-                        Photography
-                    </h5>
-                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
-                        nulla, tempore. Deserunt excepturi quas vero.
-                    </p>
-                    <p class="animated bounceInRight" style="animation-delay: 3s">
-                        <a href="#">Learn More</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators"
-            type="button">
-            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators"
-            type="button">
-            <span aria-hidden="true" class="carousel-control-next-icon"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-    <!-- INFORMATION -->
-    <section id="info">
-        <div class="container" data-aos="fade-up">
-            <h1 class="text-center" style="padding-bottom: 30px">Information</h1>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Pertama</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+    <!-- home -->
+    <section id="home">
+        <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+            <div class="carousel-indicators">
+                <button aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                    data-bs-target="#carouselExampleIndicators" type="button"></button>
+                <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators"
+                    type="button"></button>
+                <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators"
+                    type="button"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img alt="..." class="d-block w-100" src="images/real2.jpeg" />
+                    <div class="carousel-caption">
+                        <h5 class="animated bounceInRight" style="animation-delay: 1s">
+                            UCL 2022 Winner
+                        </h5>
+                        <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">
+                            Real Madrid Wins EUFA Champions League Over Liverpool
+                        </p>
+                        <p class="animated bounceInRight" style="animation-delay: 3s">
+                            <a
+                                href="https://www.marca.com/en/football/champions-league/2022/05/28/629295eaca4741085c8b462a.html">Learn
+                                More</a>
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Kedua</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+                <div class="carousel-item">
+                    <img alt="..." class="d-block w-100"
+                        src="https://www.realmadrid.com/cs/Satellite?blobcol=urldata&blobheader=image%2Fjpeg&blobkey=id&blobtable=MungoBlobs&blobwhere=1203427723043&ssbinary=true" />
+                    <div class="carousel-caption" style="">
+                        <h5 class="animated bounceInRight" style="animation-delay: 1s">
+                            king Of Europe
+                        </h5>
+                        <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">
+                            How the kings of Europe forged their legacy
+                        </p>
+                        <p class="animated bounceInRight" style="animation-delay: 3s">
+                            <a
+                                href="https://www.realmadrid.com/en/news/2022/06/08/decimocuarta-now-on-show-at-real-madrid-city">Learn
+                                More</a>
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Ketiga</h5>
-                            <p class="card-text">
-                                Some quick example text to build on the card title and make up
-                                the bulk of the card's content.
-                            </p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+                <div class="carousel-item">
+                    <img alt="" class="d-block w-100"
+                        src="https://www.realmadrid.com/cs/Satellite?blobcol=urldata&blobheader=image%2Fjpeg&blobkey=id&blobtable=MungoBlobs&blobwhere=1203355302630&ssbinary=true" />
+                    <div class="carousel-caption">
+                        <h5 class="animated bounceInRight" style="animation-delay: 1s">
+                            MADRIDISTA
+                        </h5>
+                        <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">
+                            The Real Madrid Indonesian Supporters Club
+                        </p>
+                        <p class="animated bounceInRight" style="animation-delay: 3s">
+                            <a
+                                href="https://www.realmadrid.com/en/fans/fan-clubs/the-real-madrid-indonesian-supporters-club">Learn
+                                More</a>
+                        </p>
                     </div>
                 </div>
             </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators"
+                type="button">
+                <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators"
+                type="button">
+                <span aria-hidden="true" class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about">
         <div class="container">
-            <h1 class="text-center" style="padding-bottom: 30px">About</h1>
+            <h1 class="text-center" style="padding-bottom: 30px">News</h1>
             <div class="row" style="padding-bottom: 50px">
                 <div class="col-md-6" data-aos="fade-right">
-                    <h3>mmk</h3>
+                    <h3>THE REAL MADRID CAPTAIN WAS NAMED BEST PLAYER OF THE YEAR.
+                    </h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-                        necessitatibus odio ea distinctio, ut unde illo corporis, expedita
-                        hic exercitationem numquam fugit recusandae suscipit. Inventore
-                        possimus optio libero sunt nisi! Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Doloremque ratione, molestiae at
-                        inventore sequi alias, iste placeat harum maiores quos nobis iure
-                        eaque ea explicabo, similique nulla eos unde debitis.
+                        On the 17th of October 2022, Karim Benzema was crowned king of football. Following a spectacular
+                        2021/22 campaign, France Football awarded the Real Madrid captain the 2022 Ballon d'Or. The
+                        gala, held in Paris, was attended by an extensive delegation from our club, headed by president
+                        Florentino Pérez. Benzema finished ahead of Mané, De Bruyne and Lewandowski in the voting
+                        carried out by 180 international journalists.
+
+                        Having collected the prize from Zidane, Benzema reflected: "Holding this trophy is such an
+                        honour, it's a childhood dream come true. It's an individual award, but a team one too, and I
+                        think this is the Ballon d'Or of the people. Thank you to all of Madrid, to the players, because
+                        without them this would have been impossible, to the fans for always motivating me to give my
+                        best on the pitch, and to the president as well".
+
+                        The Frenchman received the accolade after taking to Real Madrid to their Decimocuarta European
+                        Cup, a 35th LaLiga title and a 12th Spanish Super Cup, topping the scoring charts in every
+                        competition with 15, 27 and 2 goals respectively. Benzema also played a key role in his country
+                        clinching the Nations League trophy and had already been named UEFA Best Men's Player.
                     </p>
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
-                    <img src="images/img-4.jpg" class="img-rounded" width="100%" />
+                    <img src="images/GALA-BALON-DE-ORO-_AV10556.JPGThumb.jpg" class="img-rounded" width="100%" />
                 </div>
             </div>
             <div class="row" style="padding-bottom: 50px">
                 <div class="col-md-6" data-aos="fade-right">
-                    <img src="images/img-5.jpg" class="img-rounded" width="100%" />
+                    <img src="images/GALA2-BALON-DE-ORO-_AV10846.JPGThumb.jpg" class="img-rounded" width="100%" />
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
-                    <h3>Subtitle</h3>
+                    <h3>THE BELGIAN WAS NAMED BEST GOALKEEPER OF THE 2021/22 AT THE BALLON D'OR GALA.</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-                        necessitatibus odio ea distinctio, ut unde illo corporis, expedita
-                        hic exercitationem numquam fugit recusandae suscipit. Inventore
-                        possimus optio libero sunt nisi! Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Doloremque ratione, molestiae at
-                        inventore sequi alias, iste placeat harum maiores quos nobis iure
-                        eaque ea explicabo, similique nulla eos unde debitis.
+                        The Ballon d'Or 2022 gala crowned Thibaut Courtois as the greatest goalkeeper in the world. The
+                        Belgian clinched the Yashin Trophy, awarded by France Football. The Real Madrid keeper beat
+                        Bounou, Alisson, Ederson, Maignan, Mendy, Neuer, Oblak, Trapp and Lloris in the voting. At the
+                        ceremony, held at the Théâtre du Châtelet in Paris, the goalkeeper described his joy at
+                        receiving the prize: “It's an honour to win this trophy with all the fantastic goalkeepers that
+                        are here. I'd like to thank my Real Madrid teammates, it's a pleasure to be part of this
+                        incredible team, who had an unbelievable season. I'd like to thank my family and my fiancée as
+                        well. It's always important to have your family close by, especially when things aren't going so
+                        well".
                     </p>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 50px">
+                <div class="col-md-6" data-aos="fade-left">
+                    <h3>New adidas and Real Madrid casual wear line inspired by Marvel's Avengers out now</h3>
+                    <p>
+                        For the first time, adidas has launched a limited edition Marvel's Avengers casual wear line for
+                        Real Madrid. The new clothing collection features a range of Marvel Universe superheroes
+                        including Captain America, Iron Man, Hulk, Black Widow, Thor and Black Panther. Kroos and
+                        Asensio, alongside the basketball team's Llull, Tavares, Causeur, Yabusele and Randolph, plus
+                        women's first-team players Ivana Andrés and Teresa Abelleira, will star in the Avengers launch
+                        campaign.
+
+                        The men's first team will wear the Captain America t-shirt during the pre-match warm-up and the
+                        Avengers hoodie as they take to the pitch at the Bernabéu ahead of Sunday's game with Girona.
+                        The women's team will do the same when they take on Sevilla. Meanwhile, Real Madrid's Basketball
+                        team will show off the full range at their League clash with Fuenlabrada and their Euroleague
+                        encounter with Emporio Armani Milan. They will also wear the line during their official training
+                        sessions.
+
+                        This is adidas' first collection with a shared theme for all sections of the club and it is on
+                        sale now at adidas.com and in official Real Madrid stores.
+                    </p>
+                </div>
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="images/avengersAPLAUDIDORThumb.jpg" class="img-rounded" width="100%" />
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6" data-aos="fade-right">
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-                        necessitatibus odio ea distinctio, ut unde illo corporis, expedita
-                        hic exercitationem numquam fugit recusandae suscipit. Inventore
-                        possimus optio libero sunt nisi! Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Doloremque ratione, molestiae at
-                        inventore sequi alias, iste placeat harum maiores quos nobis iure
-                        eaque ea explicabo, similique nulla eos unde debitis.
-                    </p>
-                </div>
                 <div class="col-md-6" data-aos="fade-left">
-                    <img src="images/img-6.jpg" class="img-rounded" width="100%" />
+                    <img src="images/_2PC7652_hThumb.jpg" class="img-rounded" width="100%" />
+                </div>
+                <div class="col-md-6" data-aos="fade-right">
+                    <h3>The Spanish Super Cup will be held in Riyadh from January 11th until 15th</h3>
+                    <p>
+                        The Spanish Super Cup will be staged in Riyadh (Saudi Arabia) from 11 to 15 January 2023, the
+                        Spanish Football Federation has announced. Reigning champions and LaLiga winners Real Madrid
+                        will meet Copa del Rey runners-up Valencia in the semi-finals. Should they progress to the
+                        final, Carlo Ancelotti's side would go on to face the winners of the Betis-Barcelona clash. The
+                        semi-finals will kick off on 11 and 12 January and the final on 15 January. All matches will be
+                        played at the King Fahd Stadium in Riyadh, which can accommodate more than 60,000 spectators.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- LOCATION -->
-    <section id="location">
-        <div class="container-fluid">
-            <h1 class="text-center" style="padding-bottom: 30px">Location</h1>
+    <!-- INFORMATION -->
+    <section id="info">
+        <div class="container" data-aos="fade-up">
+            <h1 class="text-center" style="padding-bottom: 30px">Bernabéu Stadium</h1>
             <div class="row">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7478.67788649203!2d107.13989186774535!3d-6.807314449388967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6852e697990cef%3A0x2ddbb36bc8af404e!2sUniversitas%20Suryakancana!5e0!3m2!1sid!2sid!4v1664944717215!5m2!1sid!2sid"
-                    width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <video controls>
+                                <source src="videos/bernabeu2021.mp4">
+                            </video>
+                            <p> Engineering masterpiece: Real Madrid's stadium nears completion</p>
+                            <a href="https://www.1news.co.nz/2022/08/31/engineering-masterpiece-real-madrids-stadium-nears-completion/"
+                                class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <video controls>
+                                <source src="videos/renovBernabeu2020.mp4">
+                            </video>
+                            <p> Real Madrid | New Santiago Bernabéu stadium renovation works!</p>
+                            <a href="https://youtu.be/vxZLxsJshNQ" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <video controls>
+                                <source src="videos/bernabeu2022.mp4">
+                            </video>
+                            <p>The SPECTACULAR BEAM at the new Santiago Bernabéu stadium | Real Madrid</p>
+                            <a href="https://youtu.be/ZkSD3d8Fnos" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" style="background-color: #808080; height: 500px">
-        <div class="container">
-            <div class="row" style="padding-top: 50px">
-                <div class="col-md-6 text-white">
-                    <h1>Contact</h1>
-                    <p class="text-justify">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-                        necessitatibus odio ea distinctio, ut unde illo corporis, expedita
-                        hic exercitationem numquam fugit recusandae suscipit. Inventore
-                        possimus optio libero sunt nisi! Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Doloremque ratione, molestiae at
-                        inventore sequi alias, iste placeat harum maiores quos nobis iure
-                        eaque ea explicabo, similique nulla eos unde debitis.
-                    </p>
+    <div class="full_section nh_especiales">
+
+        <div class="nh_especiales_container">
+            <h2 class="nh_espaciales_title text-center fw-bold">SPECIAL FEATURES</h2>
+            <a href="https://www.realmadrid.com/en/about-real-madrid/news/football/special-features"
+                class="target_espaciales_link"></a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-12 py-2">
+                        <img src="images/avengersAPLAUDIDORThumb.jpg" alt="" srcset="">
+                    </div>
+                    <div class="col-md-4 col-12 py-2">
+                        <img src="images/avengersAPLAUDIDORThumb.jpg" alt="" srcset="">
+                    </div>
+                    <div class="col-md-4 col-12 py-2">
+                        <img src="images/avengersAPLAUDIDORThumb.jpg" alt="" srcset="">
+                    </div>
                 </div>
-                <div class="col-md-6"></div>
             </div>
         </div>
-    </section>
+    </div>
 
     <div class="container-fluid" style="padding-top: 15px">
         <div class="row">
@@ -381,19 +475,19 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-        let navbar = document.getElementById("navbar-custom");
+        let navbar = document.getElementById('navbar-custom');
 
-        window.addEventListener("scroll", function () {
+        window.addEventListener('scroll', function () {
             let scroll = window.scrollY;
 
             if (scroll > 50) {
-                navbar.classList.remove("navbar-dark");
-                navbar.classList.add("bg-light");
+                navbar.classList.remove('navbar-dark');
+                navbar.classList.add('bg-light');
             } else {
-                navbar.classList.add("navbar-dark");
-                navbar.classList.remove("bg-light");
+                navbar.classList.add('navbar-dark');
+                navbar.classList.remove('bg-light');
             }
-        });
+        })
     </script>
 </body>
 
